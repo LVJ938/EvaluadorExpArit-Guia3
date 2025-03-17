@@ -15,7 +15,8 @@ public class BalanceoParentesis {
         for (char c : expresion.toCharArray()) { // c toma el valor del siguiente carácter de expresion
             if (c == '(' || c == '{' || c == '[') {
                 pila.push(c); // Añade el caracter seleccionado a la parte duperior de la pila 
-            } else if (c == ')' || c == '}' || c == ']') {
+            } 
+            else if (c == ')' || c == '}' || c == ']') {
                 if (pila.isEmpty()) {
                     return false; // Si la pila queda basia la expresion está desbalanceada
                 }
