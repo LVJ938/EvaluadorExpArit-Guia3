@@ -9,6 +9,7 @@ import java.util.Stack; // Se mporta la clase Stack para manejar la pila
 public class BalanceoParentesis {
       
     public static boolean estaBalanceado(String expresion) {
+        
         Stack<Character> pila = new Stack<>(); // Se crea la pila vacía
 
         // Recorremos cada caracter de la expresión

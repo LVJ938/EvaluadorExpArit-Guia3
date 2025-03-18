@@ -8,7 +8,7 @@ import java.util.Stack; // Se mporta la clase Stack para manejar la pila
 public class InfijaPostfija {
     
     // Método para convertir una expresión infija a postfija
-    public String infijaAPostfija(String expresion) { 
+    public static String pasaInfPostf(String expresion) { 
         StringBuilder resultado = new StringBuilder(); //permite modificar el contenido sin crear nuevos objetos en memoria. y se utiliza para almacenar la expresión en notación postfija mientras se procesa.
         Stack<Character> pila = new Stack<>(); // Se crea la pila vacía
 
@@ -49,7 +49,7 @@ public class InfijaPostfija {
     }
 
     // Método para determinar la prioridad de los operadores
-    private int prioridad(char operador) {
+    private static int prioridad(char operador) {
         switch (operador) {
             case '+': case '-': return 1; // Se agrupan al tener la misma prioridad
             case '*': case '/': return 2;
